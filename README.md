@@ -1,7 +1,7 @@
 Exam Management Plugin
 
 A professional WordPress plugin for managing academic terms, exams, students, results, and reporting.
-Designed for educational institutions and assessment platforms, this plugin delivers a scalable, modular solution with robust backend admin tools and flexible frontend shortcodes. It supports manual and bulk result entry, AJAX-powered exam listings, top-student leaderboards, and PDF report generation — all built on WordPress best practices.
+Designed for educational institutions and assessment platforms, this plugin delivers a scalable, modular solution with robust backend admin tools and flexible frontend shortcodes. It supports manual and bulk result entry, AJAX-powered exam listings, top-student leaderboards, and PDF report generation, all built on WordPress best practices.
 
 Installation
 
