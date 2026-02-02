@@ -1,0 +1,138 @@
+/**
+ * Admin ID Column Styles
+ * Styles for the ID column in custom post type admin lists
+ */
+
+/* Column width and alignment */
+.column-em_id {
+    width: 100px;
+    text-align: left;
+}
+
+th.column-em_id {
+    text-align: center;
+}
+
+/* ID wrapper container */
+.em-id-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+/* ID badge styling */
+.em-id-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #0073aa;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+/* Hover effect */
+.em-id-badge:hover {
+    background: #005a87;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Active/click effect */
+.em-id-badge:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Copied confirmation message */
+.em-id-copied {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #46b450;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for copied message */
+.em-id-copied.show {
+    animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(5px);
+    }
+    15% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    85% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .column-em_id {
+        width: 80px;
+    }
+    
+    .em-id-badge {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+    
+    .em-id-copied {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+
+/* Dark mode support (if WordPress ever adds it) */
+@media (prefers-color-scheme: dark) {
+    .em-id-badge {
+        background: #2271b1;
+    }
+    
+    .em-id-badge:hover {
+        background: #135e96;
+    }
+}
+
+/* Accessibility improvements */
+.em-id-badge:focus {
+    outline: 2px solid #0073aa;
+    outline-offset: 2px;
+}
+
+/* Print styles - show IDs when printing */
+@media print {
+    .em-id-badge {
+        background: transparent !important;
+        color: #000 !important;
+        border: 1px solid #000;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+    
+    .em-id-copied {
+        display: none !important;
+    }
+}

@@ -1,0 +1,205 @@
+.em-import-wrapper {
+	max-width: 100%;
+}
+
+.em-import-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	margin-top: 20px;
+}
+.em-flow-diagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
+.em-flow-step {
+    text-align: center;
+    background: #fff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    min-width: 160px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.em-arrow {
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+    flex-shrink: 0;
+}
+
+@media (max-width: 782px) {
+	.em-import-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.em-import-instructions {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.em-import-instructions h2 {
+	margin-top: 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.em-import-instructions ol,
+.em-import-instructions ul {
+	padding-left: 20px;
+}
+
+.em-import-instructions li {
+	margin-bottom: 8px;
+}
+
+.em-csv-preview {
+	background: #f6f7f7;
+	border: 1px solid #ddd;
+	padding: 15px;
+	border-radius: 4px;
+	overflow-x: auto;
+	font-family: 'Courier New', monospace;
+	font-size: 13px;
+}
+
+.em-sample-download {
+	margin: 20px 0;
+}
+
+.em-import-form-container {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.em-file-upload-wrapper {
+	margin: 20px 0;
+	position: relative;
+}
+
+.em-file-label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	border: 2px dashed #0073aa;
+	border-radius: 8px;
+	background: #f0f6fc;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.em-file-label:hover {
+	background: #e5f2ff;
+	border-color: #005a87;
+}
+
+.em-file-label .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #0073aa;
+	margin-bottom: 10px;
+}
+
+.em-file-text {
+	font-size: 16px;
+	color: #0073aa;
+	font-weight: 500;
+}
+
+#results_csv {
+	display: none;
+}
+
+.em-file-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px;
+	background: #f0f6fc;
+	border: 2px solid #0073aa;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+
+.em-file-info .dashicons {
+	color: #0073aa;
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+}
+
+.em-filename {
+	flex: 1;
+	font-weight: 500;
+}
+
+.em-remove-file {
+	background: #dc3232;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 1;
+	padding: 0;
+}
+
+.em-remove-file:hover {
+	background: #a00;
+}
+
+.em-import-options {
+	margin: 20px 0;
+	padding: 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.em-import-options label {
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.em-import-options input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+.button-large {
+	padding: 8px 20px !important;
+	height: auto !important;
+	line-height: 1.5 !important;
+	font-size: 16px !important;
+}
+
+.button-large .dashicons {
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	margin-top: -2px;
+}
+
+.em-recent-imports {
+	margin-top: 30px;
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+}
+
+.em-recent-imports table {
+	margin-top: 15px;
+}

@@ -1,0 +1,106 @@
+.em-exam-list-wrapper {
+    margin: 20px 0;
+}
+
+.em-exam-filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.em-filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.em-filter-btn.active {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+.em-exam-item {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.em-exam-item.em-exam-status-ongoing {
+    border-left: 4px solid #46b450;
+}
+
+.em-exam-item.em-exam-status-upcoming {
+    border-left: 4px solid #0073aa;
+}
+
+.em-exam-item.em-exam-status-past {
+    border-left: 4px solid #999;
+}
+
+.em-exam-title {
+    margin: 0 0 10px;
+}
+
+.em-exam-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.em-exam-status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.em-exam-status-badge.em-exam-status-ongoing {
+    background: #46b450;
+    color: #fff;
+}
+
+.em-exam-status-badge.em-exam-status-upcoming {
+    background: #0073aa;
+    color: #fff;
+}
+
+.em-exam-status-badge.em-exam-status-past {
+    background: #999;
+    color: #fff;
+}
+
+.em-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.em-pagination-btn {
+    padding: 8px 16px;
+    border: 1px solid #0073aa;
+    background: #0073aa;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.em-pagination-btn:hover {
+    background: #005a87;
+}
+
+.em-no-exams {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}

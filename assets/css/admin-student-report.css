@@ -1,0 +1,247 @@
+/**
+ * Student Report Styles
+ */
+
+ .em-report-wrapper {
+	max-width: 1400px;
+}
+
+.em-report-actions {
+	margin: 20px 0;
+	display: flex;
+	gap: 10px;
+}
+
+.em-report-info {
+	background: #f0f6fc;
+	padding: 15px;
+	border-left: 4px solid #0073aa;
+	margin: 20px 0;
+	display: flex;
+	gap: 30px;
+}
+
+.em-report-info p {
+	margin: 0;
+}
+
+/* Table Styles */
+.em-report-table {
+	margin-top: 20px;
+	border: 1px solid #ddd;
+}
+
+.em-report-table thead th {
+	background: #f9f9f9;
+	font-weight: 600;
+	padding: 12px 10px;
+	text-align: left;
+}
+
+.em-report-table tbody tr {
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.em-report-table tbody tr:hover {
+	background: #f9f9f9;
+}
+
+.em-report-table tbody tr.em-passed {
+	border-left: 3px solid #46b450;
+}
+
+.em-report-table tbody tr.em-failed {
+	border-left: 3px solid #dc3232;
+}
+
+.em-report-table td {
+	padding: 12px 10px;
+	vertical-align: top;
+}
+
+/* Column Widths */
+.em-col-student {
+	width: 200px;
+}
+
+.em-col-exam {
+	width: 250px;
+}
+
+.em-col-term {
+	width: 150px;
+}
+
+.em-col-marks {
+	width: 100px;
+	text-align: center;
+}
+
+.em-col-grade {
+	width: 80px;
+	text-align: center;
+}
+
+.em-col-date {
+	width: 180px;
+}
+
+/* Small Text */
+.em-student-id,
+.em-exam-id {
+	color: #666;
+	font-size: 11px;
+}
+
+/* Term Badge */
+.em-term-badge {
+	display: inline-block;
+	padding: 4px 10px;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.em-no-term {
+	color: #999;
+	font-style: italic;
+	font-size: 12px;
+}
+
+/* Marks Badge */
+.em-marks-badge {
+	display: inline-block;
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+}
+
+.em-marks-excellent {
+	background: #46b450;
+}
+
+.em-marks-good {
+	background: #00a0d2;
+}
+
+.em-marks-average {
+	background: #ffb900;
+	color: #000;
+}
+
+.em-marks-poor {
+	background: #dc3232;
+}
+
+/* Grade Badge */
+.em-grade-badge {
+	display: inline-block;
+	padding: 5px 12px;
+	border-radius: 3px;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.em-grade-a {
+	background: #46b450;
+	color: #fff;
+}
+
+.em-grade-b {
+	background: #00a0d2;
+	color: #fff;
+}
+
+.em-grade-c {
+	background: #ffb900;
+	color: #000;
+}
+
+.em-grade-f {
+	background: #dc3232;
+	color: #fff;
+}
+
+/* Summary Section */
+.em-report-summary {
+	margin-top: 30px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.em-report-summary h3 {
+	margin-top: 0;
+}
+
+.em-summary-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+	margin-top: 15px;
+}
+
+.em-summary-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	border-left: 3px solid #0073aa;
+}
+
+.em-summary-label {
+	font-weight: 600;
+	color: #666;
+}
+
+.em-summary-value {
+	font-weight: 700;
+	color: #0073aa;
+	font-size: 16px;
+}
+
+/* Print Styles */
+@media print {
+	.em-report-actions {
+		display: none;
+	}
+	
+	.em-report-table {
+		border: 1px solid #000;
+	}
+	
+	.em-report-table th,
+	.em-report-table td {
+		border: 1px solid #ddd;
+	}
+	
+	.em-marks-badge,
+	.em-grade-badge,
+	.em-term-badge {
+		border: 1px solid #000;
+	}
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+	.em-summary-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.em-report-info {
+		flex-direction: column;
+		gap: 10px;
+	}
+	
+	.em-summary-grid {
+		grid-template-columns: 1fr;
+	}
+}
